@@ -8,8 +8,8 @@ function List(props) {
   const { data, starsCount, color } = props;
 
   return (
-    <div style={{border: '1px solid silver', padding: '0.5em'}}>
-      <h3>List</h3>
+    <div className="component-wrap">
+      <h3 className="component-label">List</h3>
 
       <div
         style={{

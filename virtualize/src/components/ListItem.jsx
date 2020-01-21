@@ -5,7 +5,7 @@ function ListItem(props) {
   console.log(`Render ListItem ${item}`);
 
   return (
-    <div style={{ ...style, color }}>
+    <div className="list-item" style={{ ...style, color }}>
       {JSON.stringify(item)}
       {Array(starsCount)
         .fill(0)

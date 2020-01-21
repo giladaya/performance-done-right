@@ -68,16 +68,16 @@ class ListContainer extends React.Component {
 
   render() {
     return (
-      <div style={{ border: "1px solid silver", padding: "0.5em" }}>
-        <h2>ListContainer</h2>
-        <div style={{ border: "1px solid silver", padding: "0.5em", marginBottom: "0.5em" }}>
-          <h3>Controls</h3>
+      <div className="component-wrap">
+        <h2 className="component-label">ListContainer</h2>
+        <div className="component-wrap" style={{ marginBottom: "0.5em" }}>
+          <h3 className="component-label">Controls</h3>
+          <h3>Total items: {this.state.list.length}</h3>
           <button onClick={() => this.addItems(1)}>Add 1</button>
           <button onClick={() => this.addItems(100)}>Add 100</button>
           <button onClick={() => this.addItems(1000)}>Add 1000</button>
           <button onClick={() => this.clearList()}>Clear</button>
           <button onClick={() => this.countInc(1)}>Add *</button>
-          <span> Total items: {this.state.list.length} </span>
           <br />
           <input
             type="checkbox"
