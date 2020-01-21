@@ -1,19 +1,8 @@
 import React from "react";
-import Counter from "./Counter";
-import Fibonacci from "./Fibonacci";
-import ColorPicker from "./ColorPicker";
 import List from "./List";
 import ListV from "./ListV";
 
 const INITIAL_ITEMS = 10;
-
-const COLORS = {
-  Red: "#ff0000",
-  Green: "#00cc00",
-  Blue: "#0000ff",
-  Gray: "#aaaaaa",
-  Black: "#000000"
-};
 
 class ListContainer extends React.Component {
   constructor(props) {
@@ -23,14 +12,8 @@ class ListContainer extends React.Component {
       starsCount: 1,
       isVirtualized: false,
       isListOpen: true,
-      color: COLORS["Blue"],
-      count: 35
     };
   }
-
-  setColor = color => {
-    this.setState({ color });
-  };
 
   addItems = count => {
     console.log("-- Add items clicked --");
@@ -89,22 +72,6 @@ class ListContainer extends React.Component {
         <h2>ListContainer</h2>
         <div style={{ border: "1px solid silver", padding: "0.5em", marginBottom: "0.5em" }}>
           <h3>Controls</h3>
-          Color:{" "}
-          <ColorPicker
-            palette={COLORS}
-            onChange={this.setColor}
-            value={this.state.color}
-          />
-          <br />
-          <br />
-          <Counter
-            label="Counter"
-            count={this.state.count}
-            setCount={count => this.setState({ count })}
-          />
-          <Fibonacci number={this.state.count} color={this.state.color} />
-          <br />
-          List:
           <button onClick={() => this.addItems(1)}>Add 1</button>
           <button onClick={() => this.addItems(100)}>Add 100</button>
           <button onClick={() => this.addItems(1000)}>Add 1000</button>
