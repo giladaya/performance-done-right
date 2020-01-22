@@ -36,7 +36,7 @@ module.exports = smp.wrap({
         test: /\.(jpg|png|gif|svg)$/,
         loader: 'image-webpack-loader',
         options: {
-          disable: true,
+          // disable: true,
           mozjpeg: {
             progressive: true,
             quality: 65,
