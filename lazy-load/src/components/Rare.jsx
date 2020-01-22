@@ -5,7 +5,7 @@ const Rare = props => (
     <h1>Rarely used route</h1>
     Here be dragons!
     <br />
-    <span style={{fontSize: '200px'}}>🐉</span>
+    <span style={{fontSize: '200px'}} role="img">🐉</span>
   </div>
 );
 
