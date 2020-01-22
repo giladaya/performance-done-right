@@ -21,7 +21,7 @@ function List(props) {
         {data.map(item => (
           <ListItem
             key={item}
-            item={item}
+            data={item}
             starsCount={starsCount}
             color={color}
           />

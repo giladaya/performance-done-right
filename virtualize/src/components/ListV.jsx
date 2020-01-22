@@ -6,7 +6,7 @@ function getRowRenderer(data, starsCount, color) {
   return ({ index, style }) => (
     <ListItem
       style={style}
-      item={data[index]}
+      data={data[index]}
       starsCount={starsCount}
       color={color}
     />
