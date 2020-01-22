@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const Rare = (props) => (
+const Rare = props => (
   <div>
     <h1>Rarely used route</h1>
     Here be dragons!
+    <br />
+    <span style={{fontSize: '200px'}}>🐉</span>
   </div>
 );
 
